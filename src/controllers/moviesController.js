@@ -53,8 +53,8 @@ const moviesController = {
     //Aqui estão as rotas para trabalhar com o CRUD
     add: function (req, res) {
         db.Genre.findAll()
-            .then(genres => {
-                res.render('moviesAdd.ejs', {genres})
+            .then(genre => {
+                res.render('moviesAdd.ejs', {genre})
             });        
     },
     create: function (req,res) {

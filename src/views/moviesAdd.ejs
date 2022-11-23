@@ -30,8 +30,8 @@
             <p>
                 <select name="genre_id" id="" required>
                     <option value="" disabled selected>- select genre - </option>
-                    <% genres.forEach(Genre => { %>
-                    <option value="<%= genres.id %>"><%= genres.name %></option>
+                    <% genre.forEach(genero => { %>
+                    <option value="<%= genero.id %>"><%= genero.name %></option>
                     <% }); %>
                 </select>
             </p>
